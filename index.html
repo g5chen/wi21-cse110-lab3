@@ -1,32 +1,149 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+			body{
+				background-color: linen;
+			}
+			h1{
+				color: rgb(233, 139, 108);
+				margin-left: 40px;
+			}
+		</style>
 		<title style="text-align:center;">Hi 👋 , This is the new website created by Guo Chen</title>
-		<audio src="bensound-ukulele.mp3"  autoplay="autoplay"> </audio>
 	</head>
 	<body style="background: url(background.jpg) ; background-size:100% 100%; background-attachment: fixed">
+		<audio src="bensound-ukulele.mp3"  autoplay="autoplay"> </audio>
+
+		<form>
+			<div id="askname">
+			  <label for="name" style="color:dimgray;">what is your name? (1 to 10 characters):</label>
+			  <input type="text" id="name" minlength="1" maxlength="10" size="50" placeholder="anything you want me to call you">
+			</div>
+			<div id="askmessage">
+			  <label for="msg" style="color:dimgray;">Send me Messages directly from the site:</label>
+			  <textarea id="msg" rows="5" cols="33" spellcheck="false" placeholder="Nice to meet you"></textarea>
+			</div>
+
+			<div id="table1">
+				<table>
+					<thead>
+						<tr>
+							<th>Monday</th>
+							<th>Tuesday</th>
+							<th>Wednsday</th>
+							<th>Thursday</th>
+							<th>Friday</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CSE 140L</td>
+							<td>CSE 151A</td>
+							<td>Cell 3</td>
+							<td>Cell 4</td>
+							<td>Cell 5</td>
+						</tr>
+						<tr>
+							<td>PHYSICS 2A</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+							<td>Cell 4</td>
+							<td>Cell 5</td>
+						</tr>
+						<tr>
+							<td>CSE 110</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+							<td>Cell 4</td>
+							<td>Cell 5</td>
+						</tr>
+						<tr>
+							<td>POLI 100Z</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+							<td>Cell 4</td>
+							<td>Cell 5</td>
+						</tr>
+						<tr>
+							<td>CSE 151A</td>
+							<td>Cell 2</td>
+							<td>Cell 3</td>
+							<td>Cell 4</td>
+							<td>Cell 5</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="warning">
+					<span lang="en-us">⚠️ </span> Also have intern Mon to Fri, 9am to 6pm ⚠️
+				</p>
+				<h5>⬆️⬆️⬆️ Thank you ⬆️⬆️⬆️</h3>
+
+			</div>
+		 </form>
+
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
+        		<li><a href="/home">Home</a></li>
 	        	<li><a href="/about">About</a></li>
 				<li><a href="/resume">CV</a></li>
-				<a href="chenresume.pdf" download="newfilename">Download the pdf</a>
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+		
 		<div class="container">
     		<div class="blurb">
-				<h1 style="background-color:DarkSalmon;font-family:verdana;text-align:center;">Hi there, I'm <strong>Guo Chen</strong>!</h1>
-				<h2 style="background-color:DarkSalmon;font-family:verdana;text-align:center;">💻 Computer Science major, 3rd year student 👩‍🎓</h2>
-				<p style="color:dimgray;font-family:courier;font-size:160%;text-align:center;">Love <strong>curry chicken</strong>🍛, <strong>dog</strong> 🐶and <strong>watching movies</strong>s🎬</p>
+				<h1 style="font-family:verdana;">🍊 Hi there, I'm <strong>Guo Chen</strong> 🍊</h1>
+				<h2 style="font-family:verdana;">💻 Computer Science major, 3rd year student 👩‍🎓</h2>
+				<p style="color:black;font-family:Verdana
+				;font-size:100%;">Love 🍛, 🐶 and 🎬</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		
+		<form>
+			<ul class="wrapper">
+			  <li class="form-row">
+				<label for="name">Name</label>
+				<input type="text" id="name">
+			  </li>
+			  <li class="form-row">
+				<label for="townborn">Your Time Zone</label>
+				<input type="text" id="townborn">
+			  </li>
+			  <li class="form-row">
+				<label for="email">Email Address</label>
+				<input type="email" id="email">
+			  </li>
+			  <li class="form-row">
+				<button type="submit">Click me to Submit</button>
+			  </li>
+			</ul>
+		  </form>
+
+		<form>
+			<input type="button" value="This is a button" class="favorite styled" autofocus="false">
+			<p>Hover Effect! </p>
+			<a href="https://www.cookingclassy.com/chicken-curry/" target="_blank">
+		</form>
+
+
 		<footer>
-    		<ul type="circle">
+    		<ul id = "horizontal-list" type="circle">
         	<li><a href="mailto:g5chen@ucsd.edu"style='text-decoration:none;'>🏫 Send message to my school email</a></li>
             <li><a href="mailto:chenguo0313@gmail.com"style='text-decoration:none;'>👧 Send message to my personal gmail</a></li>
             <li><a href="mailto:1536705457@qq.com"style='text-decoration:none;'>🐧 Send message to my Chinese qq-mail</a></li>
 			</ul>
+
+			<div class="wrapper2">
+				<div class="box a">A</div>
+				<div class="box b">B</div>
+				<div class="box c">C</div>
+				<div class="box d">D</div>
+			  </div>
+	
+
 		</footer>
 	</body>
 </html>
