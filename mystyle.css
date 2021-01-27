@@ -63,8 +63,8 @@ p:hover {
 nav {
     position: sticky;
     mask-image: linear-gradient(50deg, #ffffff 20%, #ffffff 75%, rgba(197, 64, 64, 0) 100%);
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 0 auto auto auto;
+    padding: 10px 0 0 0;
   }
 
 /* descendant combinator */
@@ -119,6 +119,8 @@ nav ul {
 /* general sibling combinator */
 p ~ h5 {
     color: red;
+    font-size: 1pc;
+    word-spacing: 4mm;
 }
 
 /*adjacent sibling combinator */
@@ -159,7 +161,9 @@ h1 + h2 {
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
-
+    border-style: dotted;
+    border-color: red;
+    border-width: medium;
   }
 
   .a {
@@ -178,3 +182,9 @@ h1 + h2 {
     grid-column: col2-start ;
     grid-row: row2-start ;
   }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
